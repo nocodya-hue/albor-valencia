@@ -1,0 +1,55 @@
+<!--meta {"title":"Contacto · Hablemos · Albor, Calle Colón 3, Valencia","desc":"Compra, alquiler, venta o inversión en Valencia. Escríbanos, llámenos o visítenos en Calle Colón 3. Le atiende una persona, no un formulario.","path":"contacto/","nav":"contacto","scripts":["contact.js"],"leaflet":true,"ogimg":"patio-3"}-->
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap grid" style="row-gap:24px">
+      <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">00</span>Contacto</p>
+      <div style="grid-column:4/13">
+        <h1 class="display"><span class="line-mask is-in"><span>Hablemos.</span></span></h1>
+        <p class="lead mt-4">Cuéntenos qué necesita. Le responderá una persona, normalmente el mismo día laborable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="c-t">
+    <div class="wrap grid" style="row-gap:56px">
+      <div style="grid-column:1/8">
+        <h2 id="c-t" class="label label--muted">¿Sobre qué quiere hablar?</h2>
+        <form class="mt-3" data-albor-form aria-label="Formulario de contacto">
+          <fieldset class="intents tiles" style="display:flex" data-intents>
+            <legend class="sr-only">Motivo</legend>
+            <label class="tile"><input type="radio" name="motivo" value="compra" checked><span>Compra</span></label>
+            <label class="tile"><input type="radio" name="motivo" value="alquiler"><span>Alquiler</span></label>
+            <label class="tile"><input type="radio" name="motivo" value="vender"><span>Vender</span></label>
+            <label class="tile"><input type="radio" name="motivo" value="invertir"><span>Invertir</span></label>
+            <label class="tile"><input type="radio" name="motivo" value="otra"><span>Otra consulta</span></label>
+          </fieldset>
+          <div class="form-grid mt-6">
+            <div class="field full" data-show="compra alquiler invertir"><label for="c-busco">¿Qué busca?</label><input id="c-busco" name="busco" class="input" placeholder="Ej.: ático con terraza en el Ensanche, hasta 1,5 M€"></div>
+            <div class="field full" data-show="vender" hidden><label for="c-prop">Su propiedad</label><input id="c-prop" name="propiedad" class="input" placeholder="Tipo, zona y superficie aproximada"><a class="link-u label mt-1" href="vender.html#valoracion" style="align-self:start">O solicite una valoración en 5 pasos ${ARROW}</a></div>
+            <div class="field"><label for="c-name">Nombre</label><input id="c-name" name="name" class="input" autocomplete="name" required><span class="field__error" aria-live="polite"></span></div>
+            <div class="field"><label for="c-tel">Teléfono</label><input id="c-tel" name="phone" type="tel" class="input" autocomplete="tel" required><span class="field__error" aria-live="polite"></span></div>
+            <div class="field full"><label for="c-mail">Email</label><input id="c-mail" name="email" type="email" class="input" autocomplete="email" required><span class="field__error" aria-live="polite"></span></div>
+            <div class="field full"><label for="c-msg">Mensaje</label><textarea id="c-msg" name="message" class="textarea"></textarea></div>
+            <label class="check full"><input type="checkbox" name="consent" required> <span>He leído la <a href="privacidad.html">política de privacidad</a> y acepto que Albor trate mis datos para responder a mi consulta.</span><span class="field__error" aria-live="polite"></span></label>
+            <div class="full"><button class="btn btn--solid" type="submit">Enviar ${ARROW}</button></div>
+            <div class="success full" data-success hidden tabindex="-1"><p class="h3">Gracias. Le contestamos enseguida.</p><p class="body-2 mt-2"><span class="ph">(Prototipo: el envío no se ha realizado.)</span></p></div>
+          </div>
+        </form>
+      </div>
+      <aside style="grid-column:9/13" aria-label="Contacto directo">
+        <h2 class="label label--muted">Directo</h2>
+        <div class="contact-direct mt-3">
+          <a href="#" data-contact="whatsapp"><span class="label">WhatsApp</span><span class="v">Escribir ${ARROW}</span></a>
+          <div><span class="label">Teléfono</span><a class="v" href="#" data-contact="phone">+34 963 52 20 06</a></div>
+          <div><span class="label">Email</span><a class="v" href="#" data-contact="email">hola@alborvalencia.es</a></div>
+          <div><span class="label">Oficina</span><span class="v">Calle Colón 3</span></div>
+          <div><span class="label">Horario</span><span class="v" style="font-size:1.05rem;text-align:right">Lunes a viernes, 9:30–14:00 y 16:30–20:00<br>Sábados, con cita</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="oficina" aria-label="Mapa de la oficina">
+    <div class="p-map map" data-office-map></div>
+  </section>
+</main>

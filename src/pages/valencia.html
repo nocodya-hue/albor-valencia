@@ -1,0 +1,55 @@
+<!--meta {"title":"Valencia, barrio a barrio · Dónde vivir en Valencia · Albor","desc":"Pla del Remei, Gran Vía, Ruzafa, Ciutat Vella, el Pla del Real, la Malvarrosa, la Patacona, Godella, Campolivar, Bétera y La Eliana: guía de zonas residenciales de Valencia y propiedades disponibles.","path":"valencia/","nav":"valencia","scripts":["zonemap.js","valencia.js"],"leaflet":true,"ogimg":"vlc-cac-1"}-->
+<main id="main">
+  <section class="vlc-hero" data-hero aria-labelledby="vlc-t">
+    <div class="vlc-hero__bg"><img src="assets/img/vlc-cac-1.webp" alt="L'Hemisfèric y la Ciudad de las Artes y las Ciencias reflejados en el agua al anochecer" data-speed="-.12" fetchpriority="high"></div>
+    <div class="wrap">
+      <p class="label">39°28′N · 0°22′O</p>
+      <h1 id="vlc-t" class="serif mt-3" style="font-weight:200"><span class="line-mask"><span>Valencia</span></span></h1>
+      <div class="sell-cta__row" style="border-color:rgba(243,238,229,.3)">
+        <p class="lead" style="color:rgba(243,238,229,.85)">La ciudad no es el decorado de nuestras casas. Es la razón por la que la gente se queda.</p>
+        <a class="btn btn--light" href="#barrios">Barrio a barrio ${ARROW}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="vlc-intro">
+    <div class="wrap grid" style="row-gap:40px">
+      <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">01</span>La ciudad</p>
+      <h2 id="vlc-intro" class="h3 reveal" style="grid-column:4/12">Un río convertido en jardín de nueve kilómetros, el Mediterráneo a quince minutos del centro, la huerta que todavía la rodea y una luz que los pintores valencianos llevan más de un siglo intentando atrapar.</h2>
+      <div class="grid" style="grid-column:1/-1;margin-top:clamp(40px,6vw,96px);row-gap:24px;align-items:end">
+        <figure class="media city__a" style="grid-column:1/5;aspect-ratio:3/4"><img src="assets/img/vlc-turia.webp" alt="Jardín del Turia" loading="lazy" data-speed=".06"><figcaption class="label" style="position:absolute;left:12px;bottom:12px;color:var(--cal)">Jardí del Túria</figcaption></figure>
+        <figure class="media" style="grid-column:5/10;aspect-ratio:16/11"><img src="assets/img/vlc-market.webp" alt="Cúpula del Mercado Central" loading="lazy" data-speed=".04"><figcaption class="label" style="position:absolute;left:12px;bottom:12px;color:var(--cal)">Mercat Central</figcaption></figure>
+        <figure class="media" style="grid-column:10/13;aspect-ratio:4/5" data-speed="-.08"><img src="assets/img/vlc-beach.webp" alt="Playa de Valencia" loading="lazy"><figcaption class="label" style="position:absolute;left:12px;bottom:12px;color:var(--cal)">El Mediterráneo</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="vmap section--dark" id="mapa" aria-labelledby="vmap-t">
+    <div class="vmap__side">
+      <div class="vmap__intro">
+        <p class="label chapter"><span class="chapter__n">02</span>Mapa</p>
+        <h2 id="vmap-t" class="h2">Dónde está<br><em class="italic">cada casa.</em></h2>
+        <p class="body-2 mt-3">Pase por una zona y verá lo que tenemos disponible ahora.</p>
+      </div>
+      <div class="vmap__zones" data-vmap-zones></div>
+    </div>
+    <div class="vmap__mapwrap">
+      <div class="vmap__map map map--night" data-vmap-map role="region" aria-label="Mapa de Valencia con propiedades disponibles"></div>
+      <div class="vmap__hud" aria-live="polite"><span class="label" data-vmap-zone>Valencia y entorno</span><span class="h3 num" data-vmap-n>—</span><span class="label label--muted" data-vmap-l>propiedades disponibles</span><a class="link-u label" data-vmap-a href="propiedades.html" hidden style="margin-top:10px;justify-self:start">Ver en el listado ${ARROW}</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="barrios" aria-labelledby="zones-t">
+    <div class="wrap">
+      <div class="grid" style="margin-bottom:clamp(64px,8vw,140px)"><p class="label chapter" style="grid-column:1/4"><span class="chapter__n">03</span>Barrios</p><h2 id="zones-t" class="h2" style="grid-column:4/13">Conocemos Valencia<br><em class="italic">calle a calle.</em></h2></div>
+      <div class="zones-ed" data-zones-ed></div>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-labelledby="vmag-t">
+    <div class="wrap grid" style="row-gap:32px;align-items:end">
+      <div style="grid-column:1/8"><p class="label chapter"><span class="chapter__n">04</span>Magazine</p><h2 id="vmag-t" class="h2 mt-4">Barrios, arquitectura, mercado y vida en Valencia.</h2></div>
+      <div style="grid-column:9/13;justify-self:end"><a class="btn btn--light" href="magazine.html">Leer el magazine ${ARROW}</a></div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,258 @@
+<!--meta {"title":"Albor · Inmobiliaria de lujo en Valencia desde 2006","desc":"Pisos, áticos, chalets y villas seleccionados en Valencia y su entorno. Una firma familiar desde 2006 en Calle Colón 3: criterio, conocimiento local y trato personal.","path":"","nav":"home","scripts":["zonemap.js","home.js"],"leaflet":true,"ogimg":"hero-2"}-->
+<main id="main">
+
+  <!-- 00 · HERO -->
+  <section class="hero" data-hero aria-label="Presentación">
+    <div class="hero__pin">
+      <div class="hero__stage">
+        <!-- Vídeo de campaña en bucle continuo (16:9). Producción: versión comprimida ≤ 8 MB en H.264 + WebM. -->
+        <video class="hero__video" src="assets/video/albor-hero.mp4" poster="assets/img/hero-video-poster.webp" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
+        <div class="hero__shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content wrap">
+        <p class="label hero__kicker reveal" style="--d:.2s">Propiedades seleccionadas en Valencia · Desde 2006</p>
+        <h1 class="display hero__title">
+          <span class="line-mask"><span style="--d:.35s">Valencia amanece</span></span>
+          <span class="line-mask"><span style="--d:.5s"><em class="serif italic">antes</em> en algunas casas.</span></span>
+        </h1>
+
+        <form class="hero__search reveal" style="--d:.9s" action="propiedades.html" method="get" role="search" aria-label="Buscar propiedades">
+          <fieldset class="seg seg--light">
+            <legend class="sr-only">Operación</legend>
+            <label><input type="radio" name="op" value="venta" checked><span>Comprar</span></label>
+            <label><input type="radio" name="op" value="alquiler"><span>Alquilar</span></label>
+          </fieldset>
+          <div class="hero__field">
+            <label class="sr-only" for="hs-type">Tipo de inmueble</label>
+            <select id="hs-type" name="type" class="select"><option value="">Cualquier tipo</option></select>
+          </div>
+          <div class="hero__field">
+            <label class="sr-only" for="hs-zone">Ubicación</label>
+            <select id="hs-zone" name="zone" class="select"><option value="">Toda Valencia y entorno</option></select>
+          </div>
+          <button class="btn btn--light hero__submit" type="submit"><span>Ver <span data-hero-count>—</span> propiedades</span> ${ARROW}</button>
+        </form>
+      </div>
+
+      <div class="hero__meta wrap" aria-hidden="true">
+        <span class="label">39°28′N · 0°22′O — Valencia <span data-clock>--:--</span></span>
+        <span class="hero__scroll"><span class="label">Desliza</span><i></i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 · LA FIRMA (manifiesto) -->
+  <section class="section intro" aria-labelledby="intro-t">
+    <div class="wrap">
+      <div class="grid">
+        <p class="label chapter reveal" style="grid-column:1/4"><span class="chapter__n">01</span>La firma</p>
+        <h2 id="intro-t" class="h3 intro__statement reveal" style="grid-column:4/13">
+          Desde 2006, dos hermanos venden casas en Valencia como les gustaría que se vendiera la suya: <em class="italic">con tiempo, con criterio y en persona.</em>
+        </h2>
+      </div>
+      <div class="grid intro__row">
+        <figure class="intro__img media img-reveal" style="grid-column:1/6">
+          <img src="assets/img/stair-1.webp" alt="Escalera de piedra caliza curvada bañada por luz natural" loading="lazy" data-speed=".06">
+        </figure>
+        <div class="intro__copy" style="grid-column:7/12">
+          <span class="giant intro__year" data-speed=".14" aria-hidden="true">2006</span>
+          <div class="stack reveal">
+            <p class="lead">Una oficina, una ciudad y una idea sencilla: tratar cada casa como si fuera la única que tenemos en cartera.</p>
+            <p class="body-2">Seleccionamos las propiedades que representamos. Las conocemos antes de enseñarlas. Y acompañamos a quien compra, vende o alquila hasta el último papel, sin prisas que no sean suyas.</p>
+            <a class="link-u label" href="la-firma.html">Conocer la firma ${ARROW}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · INVENTARIO -->
+  <section class="section section--stone stats" aria-labelledby="stats-t">
+    <div class="wrap">
+      <div class="grid stats__head">
+        <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">02</span>Inventario</p>
+        <div style="grid-column:4/13">
+          <h2 id="stats-t" class="h2 reveal">Lo que hay hoy,<br>contado sin adornos.</h2>
+          <p class="mt-3 stats__source"><span class="placeholder-note">[Datos reales de Inmovilla]</span> <span class="muted" style="font-size:13px">Cifras calculadas en tiempo real desde el inventario. En este prototipo: inventario de demostración.</span></p>
+        </div>
+      </div>
+      <div class="stats__grid" data-stats>
+        <a class="stat stat--main" href="propiedades.html">
+          <span class="label label--muted">Propiedades activas</span>
+          <span class="giant num" data-stat="total_properties" data-count="0">0</span>
+        </a>
+        <a class="stat" href="propiedades.html?op=venta"><span class="h1 num" data-stat="sale_properties" data-count="0">0</span><span class="label label--muted">En venta</span></a>
+        <a class="stat" href="propiedades.html?op=alquiler"><span class="h1 num" data-stat="rent_properties" data-count="0">0</span><span class="label label--muted">En alquiler</span></a>
+        <a class="stat" href="propiedades.html?zone=ciutat-vella,sant-francesc,pla-del-remei,gran-via,l-eixample,ruzafa,pla-del-real,mestalla,cabanyal,malvarrosa"><span class="h1 num" data-stat="city_valencia" data-count="0">0</span><span class="label label--muted">En Valencia ciudad</span></a>
+        <a class="stat" href="valencia.html"><span class="h1 num" data-stat="premium_zone_properties" data-count="0">0</span><span class="label label--muted">En zonas premium</span></a>
+      </div>
+      <div class="stats__types" data-types aria-label="Propiedades por tipo"></div>
+    </div>
+  </section>
+
+  <!-- 03 · EXPOSICIÓN (horizontal) -->
+  <section class="expo section--dark" aria-labelledby="expo-t">
+    <div class="expo__pin">
+      <div class="wrap expo__head">
+        <p class="label chapter"><span class="chapter__n">03</span>Exposición</p>
+        <h2 id="expo-t" class="h3">Una selección, <em class="italic">sala por sala.</em></h2>
+        <p class="label num expo__count" aria-live="polite"><span data-expo-i>01</span> / <span data-expo-n>08</span></p>
+      </div>
+      <div class="expo__track" data-expo tabindex="0" aria-label="Propiedades destacadas, desplazamiento horizontal"></div>
+      <div class="wrap expo__bar"><span class="expo__progress"><i data-expo-progress></i></span><a class="link-u label" href="propiedades.html">Ver todas las propiedades ${ARROW}</a></div>
+    </div>
+  </section>
+
+  <!-- 04 · BUSCAR (tipo / zona) -->
+  <section class="section finder" aria-labelledby="finder-t">
+    <div class="wrap">
+      <div class="grid">
+        <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">04</span>Buscar</p>
+        <h2 id="finder-t" class="h2 reveal" style="grid-column:4/13">¿Qué busca?<br><em class="italic">¿Y dónde?</em></h2>
+      </div>
+      <div class="grid finder__cols">
+        <div style="grid-column:1/7">
+          <p class="label label--muted finder__cap">Por tipo de inmueble</p>
+          <ul class="finder__list" data-finder-types></ul>
+        </div>
+        <div style="grid-column:7/13">
+          <p class="label label--muted finder__cap">Por zona</p>
+          <ul class="finder__list" data-finder-zones></ul>
+        </div>
+      </div>
+    </div>
+    <div class="finder__float" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <!-- 05 · VALENCIA, BARRIO A BARRIO (mapa) -->
+  <section class="vmap section--dark" aria-labelledby="vmap-t">
+    <div class="vmap__side">
+      <div class="vmap__intro">
+        <p class="label chapter"><span class="chapter__n">05</span>Valencia</p>
+        <h2 id="vmap-t" class="h2">Barrio<br>a barrio.</h2>
+        <p class="body-2 mt-3">Pase por cada zona: el mapa le muestra lo que tenemos disponible ahora mismo.</p>
+      </div>
+      <div class="vmap__zones" data-vmap-zones></div>
+    </div>
+    <div class="vmap__mapwrap">
+      <div class="vmap__map map map--night" data-vmap-map role="region" aria-label="Mapa de Valencia con propiedades disponibles"></div>
+      <div class="vmap__hud" aria-live="polite"><span class="label" data-vmap-zone>Valencia y entorno</span><span class="h3 num" data-vmap-n>—</span><span class="label label--muted" data-vmap-l>propiedades disponibles</span><a class="link-u label" data-vmap-a href="propiedades.html" hidden style="margin-top:10px;justify-self:start">Ver en el listado ${ARROW}</a></div>
+    </div>
+  </section>
+
+  <!-- 06 · LA CIUDAD -->
+  <section class="section city" aria-labelledby="city-t">
+    <div class="wrap">
+      <div class="grid city__grid">
+        <figure class="city__a media" style="grid-column:1/6"><img src="assets/img/vlc-cac-2.webp" alt="Ciudad de las Artes y las Ciencias, Valencia" loading="lazy" data-speed=".05"><figcaption class="label">Ciutat de les Arts i les Ciències</figcaption></figure>
+        <div class="city__text" style="grid-column:7/13">
+          <p class="label chapter"><span class="chapter__n">06</span>La ciudad</p>
+          <h2 id="city-t" class="h2 reveal mt-3">Valencia no es un decorado. <em class="italic">Es la razón por la que uno se queda.</em></h2>
+          <p class="body-2 mt-4 reveal">El Turia convertido en jardín, el Mediterráneo a quince minutos del centro, un mercado modernista, la huerta que todavía rodea la ciudad. Conocer Valencia es la mitad de nuestro trabajo.</p>
+          <a class="btn mt-5" href="valencia.html">Descubrir Valencia ${ARROW}</a>
+        </div>
+        <figure class="city__b media" style="grid-column:8/11" data-speed="-.1"><img src="assets/img/vlc-orange.webp" alt="Naranjo con frutos en un patio valenciano" loading="lazy"><figcaption class="label">La huerta</figcaption></figure>
+        <figure class="city__c media" style="grid-column:2/5" data-speed=".12"><img src="assets/img/vlc-turia.webp" alt="Paseo con palmeras en el Jardín del Turia" loading="lazy"><figcaption class="label">Jardí del Túria</figcaption></figure>
+        <figure class="city__d media" style="grid-column:6/12"><img src="assets/img/vlc-beach.webp" alt="Playa de Valencia al amanecer" loading="lazy" data-speed=".05"><figcaption class="label">El Mediterráneo</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · MAGAZINE -->
+  <section class="section section--cipres mag" aria-labelledby="mag-t">
+    <div class="wrap">
+      <div class="grid">
+        <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">07</span>Conocemos Valencia</p>
+        <h2 id="mag-t" class="h2 reveal" style="grid-column:4/11">El magazine.</h2>
+        <a class="link-u label" style="grid-column:11/13;align-self:end;justify-self:end" href="magazine.html">Todas las piezas ${ARROW}</a>
+      </div>
+      <div class="mag__grid">
+        <a class="mag__item" href="magazine.html#pla-del-remei" data-cursor="Leer">
+          <figure class="media"><img src="assets/img/ext-8.webp" alt="Fachada modernista con balcones de forja en el Ensanche" loading="lazy"></figure>
+          <p class="label label--muted mt-2">Barrios · Pieza en preparación</p>
+          <h3 class="h4 mt-1">El Pla del Remei, la calle Colón y la arquitectura del Ensanche</h3>
+        </a>
+        <a class="mag__item mag__item--b" href="magazine.html#techos-altos" data-cursor="Leer">
+          <figure class="media"><img src="assets/img/int-5.webp" alt="Salón con molduras y techos altos" loading="lazy"></figure>
+          <p class="label label--muted mt-2">Arquitectura · Pieza en preparación</p>
+          <h3 class="h4 mt-1">Techos de cuatro metros: cómo reformar una finca de 1930 sin perder su alma</h3>
+        </a>
+        <a class="mag__item" href="magazine.html#mercado" data-cursor="Leer">
+          <figure class="media"><img src="assets/img/vlc-market.webp" alt="Interior del Mercado Central de Valencia" loading="lazy"></figure>
+          <p class="label label--muted mt-2">Mercado · Pieza en preparación</p>
+          <h3 class="h4 mt-1">Comprar en Valencia: lo que conviene saber antes de la primera visita</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · VENDER -->
+  <section class="sell-cta section--dark" aria-labelledby="sell-t">
+    <div class="sell-cta__img media"><img src="assets/img/hero-4.webp" alt="" loading="lazy" data-speed=".08"></div>
+    <div class="wrap sell-cta__inner">
+      <p class="label chapter"><span class="chapter__n">08</span>Propietarios</p>
+      <h2 id="sell-t" class="h1 mt-4">Su propiedad merece <em class="italic">una estrategia</em> a la altura.</h2>
+      <div class="sell-cta__row">
+        <p class="lead" style="color:var(--text-2)">Valoración personalizada, fotografía y vídeo de arquitectura, compradores seleccionados y un interlocutor único de principio a fin.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn--light" href="vender.html#valoracion">Solicitar valoración ${ARROW}</a>
+          <a class="btn btn--light" href="vender.html">Cómo trabajamos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · INSTAGRAM -->
+  <section class="section section--tight insta" aria-labelledby="insta-t">
+    <div class="wrap">
+      <div class="insta__head">
+        <h2 id="insta-t" class="label chapter"><span class="chapter__n">09</span>Desde nuestro cuaderno</h2>
+        <a href="#" class="link-u label" data-contact="instagram">Instagram ${ARROW}</a>
+      </div>
+      <div class="insta__grid">
+        <figure class="media"><img src="assets/img/tex-2.webp" alt="" loading="lazy"><figcaption class="label">Selección de la semana</figcaption></figure>
+        <figure class="media"><img src="assets/img/vlc-old-1.webp" alt="" loading="lazy"><figcaption class="label">Arquitectura valenciana</figcaption></figure>
+        <figure class="media"><img src="assets/img/patio-1.webp" alt="" loading="lazy"><figcaption class="label">Propiedades que nos inspiran</figcaption></figure>
+        <figure class="media"><img src="assets/img/vlc-cac-3.webp" alt="" loading="lazy"><figcaption class="label">Valencia</figcaption></figure>
+      </div>
+      <p class="mt-3"><span class="placeholder-note">[Conectar cuenta de Instagram — 4 últimas publicaciones por categoría]</span></p>
+    </div>
+  </section>
+
+  <!-- 10 · OFICINA -->
+  <section class="section office" aria-labelledby="office-t">
+    <div class="wrap">
+      <div class="grid office__top">
+        <div class="office__head">
+          <p class="label chapter"><span class="chapter__n">10</span>La oficina</p>
+          <h2 id="office-t" class="office__addr serif" data-reveal>
+            <span class="line-mask"><span>Calle</span></span>
+            <span class="line-mask"><span style="--d:.12s"><em class="italic">Colón</em> 3</span></span>
+          </h2>
+          <p class="lead office__lead reveal">En el corazón del Ensanche, a un paso de la Porta de la Mar. Aquí empezó todo en 2006 y aquí seguimos recibiendo a cada cliente en persona.</p>
+        </div>
+        <figure class="office__facade media img-reveal">
+          <img src="assets/img/ext-9.webp" alt="Fachada modernista del edificio de la oficina en el Ensanche de Valencia" loading="lazy" data-speed=".06">
+          <figcaption class="label">Calle Colón 3 · Fachada</figcaption>
+        </figure>
+      </div>
+      <div class="grid office__row">
+        <figure class="office__interior media img-reveal">
+          <img src="assets/img/tex-3.webp" alt="Sala de reuniones con mesa de piedra, silla de madera y luz natural" loading="lazy" data-speed="-.05">
+          <figcaption class="label">La sala de reuniones</figcaption>
+        </figure>
+        <figure class="office__detail media img-reveal">
+          <img src="assets/img/vlc-street.webp" alt="Calle del centro de Valencia junto a la oficina" loading="lazy">
+          <figcaption class="label">El barrio</figcaption>
+        </figure>
+        <dl class="office__dl">
+          <div><dt class="label label--muted">Dirección</dt><dd>Calle Colón 3, 46004 Valencia</dd></div>
+          <div><dt class="label label--muted">Horario</dt><dd>Lunes a viernes, 9:30–14:00 y 16:30–20:00<br>Sábados, con cita</dd></div>
+          <div><dt class="label label--muted">Teléfono</dt><dd><a href="#" data-contact="phone">+34 963 52 20 06</a></dd></div>
+          <div class="office__cta"><a class="btn btn--solid" href="contacto.html#oficina" data-magnetic=".3">Visítanos ${ARROW}</a></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,158 @@
+<!--meta {"title":"Propiedad · Albor","desc":"Ficha de propiedad en Valencia: fotografías, superficie, habitaciones, ubicación y contacto directo con Albor.","path":"propiedad/","nav":"propiedades","scripts":["property.js"],"leaflet":true,"ogtype":"article"}-->
+<main id="main" data-property>
+  <section class="p-hero" data-hero aria-labelledby="p-title">
+    <div class="p-hero__media"><img data-p="hero" src="" alt="" fetchpriority="high" data-speed="-.12"></div>
+    <div class="p-hero__shade" aria-hidden="true"></div>
+    <div class="p-hero__crumbs wrap"><nav aria-label="Migas de pan"><ol class="crumbs" data-p="crumbs"></ol></nav></div>
+    <div class="p-hero__inner wrap">
+      <div class="p-hero__tags" data-p="tags"></div>
+      <h1 id="p-title" class="display" data-p="title">&nbsp;</h1>
+      <div class="p-hero__row">
+        <div>
+          <p class="label" style="opacity:.8" data-p="loc"></p>
+          <p class="p-hero__price mt-1" data-p="price"></p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn--light" href="#contacto-propiedad">Solicitar visita ${ARROW}</a>
+          <a class="btn btn--light" href="#galeria">Ver galería</a>
+          <span data-p="fav"></span>
+          <button class="p-share" type="button" data-p="share" aria-label="Compartir esta propiedad"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5v10M6 6.5l4-4 4 4M4 10.5v6h12v-6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-facts" aria-label="Datos principales"><div class="wrap"><dl class="p-facts__grid" data-p="facts"></dl></div></section>
+
+  <!-- Galería inmersiva -->
+  <section class="gallery" id="galeria" aria-roledescription="carrusel" aria-label="Galería de fotografías">
+    <div class="wrap gallery__head">
+      <p class="label chapter"><span class="chapter__n">01</span>La galería</p>
+      <p class="gallery__count num" aria-live="polite"><span data-g="i">01</span> / <span data-g="n">00</span></p>
+      <div class="gallery__ctrl">
+        <button class="icon-btn" type="button" data-g="prev" aria-label="Foto anterior"><svg viewBox="0 0 18 10"><path d="M18 5H1.5M5.5 1l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+        <button class="icon-btn" type="button" data-g="next" aria-label="Foto siguiente"><svg viewBox="0 0 18 10"><path d="M0 5h16.5M12.5 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+        <button class="btn btn--sm" type="button" data-g="full">Pantalla completa</button>
+      </div>
+    </div>
+    <div class="gallery__viewport" data-cursor="Arrastrar" tabindex="0" aria-label="Use las flechas del teclado para navegar"><div class="gallery__track" data-g="track"></div></div>
+    <div class="wrap"><div class="gallery__bar"><i data-g="bar"></i></div></div>
+  </section>
+
+  <section class="p-section" aria-labelledby="p-viv">
+    <div class="wrap grid">
+      <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">02</span>La vivienda</p>
+      <h2 id="p-viv" class="sr-only">La vivienda</h2>
+      <div class="p-desc prose reveal" style="grid-column:4/11;max-width:none" data-p="desc"></div>
+    </div>
+  </section>
+
+  <section class="p-section" aria-labelledby="p-det">
+    <div class="wrap grid" style="row-gap:48px">
+      <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">03</span>Detalles</p>
+      <div style="grid-column:4/13">
+        <h2 id="p-det" class="h3">Ficha técnica</h2>
+        <dl class="details mt-4" data-p="details"></dl>
+        <h3 class="label label--muted mt-6">Características</h3>
+        <ul class="feat-list mt-2" data-p="features"></ul>
+      </div>
+      <div style="grid-column:4/8">
+        <h3 class="label label--muted">Plano</h3>
+        <div class="plan-ph mt-2"><span class="placeholder-note">[Plano desde Inmovilla]</span></div>
+      </div>
+      <div style="grid-column:9/13">
+        <h3 class="label label--muted">Vídeo</h3>
+        <div class="plan-ph mt-2" style="aspect-ratio:9/12"><span class="placeholder-note">[Vídeo 9:16 de la propiedad]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-section" aria-labelledby="p-fin" data-p="finance" hidden>
+    <div class="wrap grid" style="row-gap:40px">
+      <p class="label chapter" style="grid-column:1/4"><span class="chapter__n">04</span>Financiación</p>
+      <div style="grid-column:4/13" class="mortgage">
+        <div>
+          <h2 id="p-fin" class="h3">¿Cuánto supondría al mes?</h2>
+          <p class="body-2 mt-2">Simulación orientativa con cuota constante (sistema francés). Ajuste los valores a su caso.</p>
+          <div class="form-grid mt-4" data-mort>
+            <div class="field"><label for="m-price">Precio (€)</label><input id="m-price" class="input num" type="number" inputmode="numeric" step="1000"></div>
+            <div class="field"><label for="m-down">Aportación inicial</label><select id="m-down" class="select"><option value=".2">20 %</option><option value=".3" selected>30 %</option><option value=".4">40 %</option><option value=".5">50 %</option></select></div>
+            <div class="field"><label for="m-years">Plazo</label><select id="m-years" class="select"><option>15</option><option>20</option><option selected>25</option><option>30</option></select></div>
+            <div class="field"><label for="m-rate">Interés anual (%)</label><input id="m-rate" class="input num" type="number" inputmode="decimal" step=".05" value="3"></div>
+          </div>
+        </div>
+        <div class="mortgage__out" aria-live="polite">
+          <p class="label label--muted">Cuota mensual estimada</p>
+          <p class="mortgage__fee num" data-mort-fee>—</p>
+          <dl class="details" style="grid-template-columns:1fr">
+            <div><dt>Importe del préstamo</dt><dd data-mort-loan>—</dd></div>
+            <div><dt>Aportación inicial</dt><dd data-mort-down>—</dd></div>
+            <div><dt>Intereses totales</dt><dd data-mort-int>—</dd></div>
+          </dl>
+          <p class="body-2 mt-3" style="font-size:12px">No incluye impuestos ni gastos de compraventa, que conviene prever aparte. No es una oferta de financiación.</p>
+          <a class="link-u label mt-3" href="#contacto-propiedad" data-mort-cta style="display:inline-flex">Quiero que me asesoren sobre la financiación ${ARROW}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-section" aria-labelledby="p-ubi" style="padding-bottom:0">
+    <div class="wrap grid">
+      <p class="label chapter" style="grid-column:1/4"><span class="chapter__n" data-p="n-ubi">05</span>Ubicación</p>
+      <div style="grid-column:4/13">
+        <h2 id="p-ubi" class="h3" data-p="zone-title"></h2>
+        <p class="body-2 mt-3" data-p="zone-blurb"></p>
+        <p class="label label--muted mt-3">Ubicación aproximada · la dirección exacta se facilita al concertar la visita</p>
+      </div>
+    </div>
+    <div class="p-map map mt-6" data-p="map" role="region" aria-label="Mapa de la zona"></div>
+  </section>
+
+  <section class="section p-form section--dark" id="contacto-propiedad" aria-labelledby="p-form-t">
+    <div class="wrap grid" style="row-gap:48px">
+      <div style="grid-column:1/6">
+        <p class="label chapter"><span class="chapter__n" data-p="n-visita">06</span>Visita</p>
+        <h2 id="p-form-t" class="h2 mt-4">Quiero conocer esta propiedad.</h2>
+        <p class="body-2 mt-4">Le responderá la persona que conoce la casa, normalmente en el mismo día laborable. Si lo prefiere, escríbanos por WhatsApp.</p>
+        <div class="mt-5" style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn--light" href="#" data-contact="whatsapp">WhatsApp</a>
+          <a class="btn btn--light" href="#" data-contact="phone">Llamar</a>
+        </div>
+      </div>
+      <form class="form-grid" style="grid-column:7/13" data-albor-form aria-label="Solicitud de información de la propiedad">
+        <input type="hidden" name="ref" data-p="ref-input">
+        <div class="field"><label for="pf-name">Nombre</label><input id="pf-name" name="name" class="input" autocomplete="name" required><span class="field__error" aria-live="polite"></span></div>
+        <div class="field"><label for="pf-phone">Teléfono</label><input id="pf-phone" name="phone" type="tel" class="input" autocomplete="tel" required><span class="field__error" aria-live="polite"></span></div>
+        <div class="field full"><label for="pf-email">Email</label><input id="pf-email" name="email" type="email" class="input" autocomplete="email" required><span class="field__error" aria-live="polite"></span></div>
+        <div class="field full"><label for="pf-when">Preferencia</label><select id="pf-when" name="when" class="select"><option>Visita presencial</option><option>Videollamada</option><option>Solo más información</option></select></div>
+        <div class="field full"><label for="pf-msg">Mensaje</label><textarea id="pf-msg" name="message" class="textarea" data-p="msg"></textarea></div>
+        <label class="check full"><input type="checkbox" name="financiacion" data-p="fin-check"> <span>Me interesa información sobre financiación hipotecaria.</span></label>
+        <label class="check full"><input type="checkbox" name="consent" required> <span>He leído la <a href="privacidad.html">política de privacidad</a> y acepto que Albor trate mis datos para responder a esta solicitud.</span><span class="field__error" aria-live="polite"></span></label>
+        <div class="full"><button class="btn btn--light" type="submit">Enviar solicitud ${ARROW}</button></div>
+        <div class="success full" data-success hidden tabindex="-1"><p class="h3">Gracias. Le llamaremos pronto.</p><p class="body-2 mt-2">Hemos recibido su solicitud sobre esta propiedad. <span class="ph">(Prototipo: el envío no se ha realizado.)</span></p></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="p-sim">
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap">
+        <h2 id="p-sim" class="h2">Propiedades similares</h2>
+        <a class="link-u label" data-p="more-link" href="propiedades.html">Ver más ${ARROW}</a>
+      </div>
+      <div class="sim-grid mt-6" data-p="similar"></div>
+    </div>
+  </section>
+
+  <div class="p-sticky" data-p="sticky"><span><span class="label label--muted" data-p="sticky-ref"></span><br><span class="num" data-p="sticky-price"></span></span><a class="btn btn--solid btn--sm" href="#contacto-propiedad">Solicitar visita</a></div>
+</main>
+
+<div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Galería a pantalla completa">
+  <div class="lightbox__top"><span class="label num" data-lb="count"></span><button class="icon-btn" type="button" data-lb="close" aria-label="Cerrar">×</button></div>
+  <div class="lightbox__stage" data-lb="stage"></div>
+  <div class="lightbox__foot">
+    <button class="icon-btn" type="button" data-lb="prev" aria-label="Anterior"><svg viewBox="0 0 18 10"><path d="M18 5H1.5M5.5 1l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+    <span class="label" data-lb="title"></span>
+    <button class="icon-btn" type="button" data-lb="next" aria-label="Siguiente"><svg viewBox="0 0 18 10"><path d="M0 5h16.5M12.5 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+  </div>
+</div>

@@ -1,0 +1,310 @@
+{
+  "_comment": "Zonas y municipios. Coordenadas aproximadas del centro de cada zona (para el mapa). 'premium' marca las zonas que se suman al contador 'En zonas premium' — criterio editable por la firma.",
+  "groups": [
+    {
+      "id": "ciudad",
+      "name": "Valencia ciudad"
+    },
+    {
+      "id": "litoral",
+      "name": "Litoral"
+    },
+    {
+      "id": "norte",
+      "name": "Área norte y Camp de Túria"
+    }
+  ],
+  "zones": [
+    {
+      "slug": "ciutat-vella",
+      "name": "Ciutat Vella",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4757,
+      "lng": -0.378,
+      "premium": true,
+      "img": "zone-ciutat-vella",
+      "blurb": "El casco histórico: palacios, calles estrechas y fincas señoriales a pocos pasos de la Catedral y del Mercado Central."
+    },
+    {
+      "slug": "sant-francesc",
+      "name": "Sant Francesc",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4696,
+      "lng": -0.377,
+      "premium": true,
+      "img": "zone-sant-francesc",
+      "blurb": "Plaza del Ayuntamiento, calle de la Paz y las grandes fincas de principios del siglo XX."
+    },
+    {
+      "slug": "pla-del-remei",
+      "name": "El Pla del Remei",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4683,
+      "lng": -0.3712,
+      "premium": true,
+      "img": "ext-8",
+      "blurb": "Calle Colón, Jorge Juan, Cirilo Amorós. El Ensanche más residencial, con edificios modernistas y comercio de autor."
+    },
+    {
+      "slug": "gran-via",
+      "name": "Gran Vía",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4652,
+      "lng": -0.3688,
+      "premium": true,
+      "img": "vlc-street",
+      "blurb": "Las avenidas arboladas de Marqués del Turia y Germanías. Viviendas amplias, techos altos y luz de bulevar."
+    },
+    {
+      "slug": "l-eixample",
+      "name": "L'Eixample",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.464,
+      "lng": -0.373,
+      "premium": true,
+      "img": "ext-9",
+      "blurb": "El Ensanche de finales del XIX: retícula ordenada, chaflanes y arquitectura de la burguesía valenciana."
+    },
+    {
+      "slug": "ruzafa",
+      "name": "Ruzafa",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4598,
+      "lng": -0.3752,
+      "premium": false,
+      "img": "vlc-old-2",
+      "blurb": "Mercado, estudios de diseño, cafés y una vida de barrio que se mantiene. El Ensanche más creativo."
+    },
+    {
+      "slug": "pla-del-real",
+      "name": "El Pla del Real",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4775,
+      "lng": -0.3615,
+      "premium": true,
+      "img": "vlc-turia",
+      "blurb": "Entre los Jardines del Real (Viveros) y la avenida de Aragón. Tranquilidad, parques y edificios con vistas abiertas."
+    },
+    {
+      "slug": "mestalla",
+      "name": "Mestalla",
+      "city": "Valencia",
+      "group": "ciudad",
+      "lat": 39.4745,
+      "lng": -0.357,
+      "premium": false,
+      "img": "vlc-old-1",
+      "blurb": "Avenida de Blasco Ibáñez y el entorno universitario. Pisos amplios, bien comunicados."
+    },
+    {
+      "slug": "cabanyal",
+      "name": "El Cabanyal",
+      "city": "Valencia",
+      "group": "litoral",
+      "lat": 39.4685,
+      "lng": -0.329,
+      "premium": false,
+      "img": "zone-cabanyal",
+      "blurb": "Casas de pescadores con fachadas de azulejo, conjunto histórico protegido junto al mar."
+    },
+    {
+      "slug": "malvarrosa",
+      "name": "La Malvarrosa",
+      "city": "Valencia",
+      "group": "litoral",
+      "lat": 39.479,
+      "lng": -0.3245,
+      "premium": false,
+      "img": "zone-malvarrosa",
+      "blurb": "Primera línea de playa urbana, paseo marítimo y la luz del amanecer sobre el Mediterráneo."
+    },
+    {
+      "slug": "patacona",
+      "name": "Patacona",
+      "city": "Alboraya",
+      "group": "litoral",
+      "lat": 39.4905,
+      "lng": -0.3215,
+      "premium": true,
+      "img": "zone-patacona",
+      "blurb": "Playa más tranquila, edificios residenciales frente al mar y la huerta a la espalda."
+    },
+    {
+      "slug": "alboraya",
+      "name": "Alboraya",
+      "city": "Alboraya",
+      "group": "norte",
+      "lat": 39.5,
+      "lng": -0.352,
+      "premium": false,
+      "img": "zone-alboraya",
+      "blurb": "Huerta, horchata y nuevos desarrollos residenciales entre Valencia y el mar."
+    },
+    {
+      "slug": "rocafort",
+      "name": "Rocafort",
+      "city": "Rocafort",
+      "group": "norte",
+      "lat": 39.5305,
+      "lng": -0.4095,
+      "premium": true,
+      "img": "zone-rocafort",
+      "blurb": "Chalets con jardín y calles tranquilas a diez minutos de Valencia."
+    },
+    {
+      "slug": "godella",
+      "name": "Godella",
+      "city": "Godella",
+      "group": "norte",
+      "lat": 39.5205,
+      "lng": -0.4115,
+      "premium": true,
+      "img": "zone-godella",
+      "blurb": "Villas históricas, pinadas y vida de pueblo con conexión directa en metro."
+    },
+    {
+      "slug": "campolivar",
+      "name": "Campolivar",
+      "city": "Godella",
+      "group": "norte",
+      "lat": 39.5265,
+      "lng": -0.4255,
+      "premium": true,
+      "img": "zone-campolivar",
+      "blurb": "Urbanización residencial de parcelas amplias, pinos y privacidad."
+    },
+    {
+      "slug": "betera",
+      "name": "Bétera",
+      "city": "Bétera",
+      "group": "norte",
+      "lat": 39.5915,
+      "lng": -0.4615,
+      "premium": true,
+      "img": "zone-betera",
+      "blurb": "Torre en Conde, Mas Camarena, golf y colegios internacionales."
+    },
+    {
+      "slug": "la-eliana",
+      "name": "La Eliana",
+      "city": "La Eliana",
+      "group": "norte",
+      "lat": 39.5665,
+      "lng": -0.527,
+      "premium": true,
+      "img": "zone-la-eliana",
+      "blurb": "Chalets entre pinos, clima suave y una de las zonas residenciales más buscadas del Camp de Túria."
+    }
+  ],
+  "types": [
+    {
+      "slug": "piso",
+      "name": "Piso",
+      "plural": "Pisos"
+    },
+    {
+      "slug": "atico",
+      "name": "Ático",
+      "plural": "Áticos"
+    },
+    {
+      "slug": "chalet",
+      "name": "Chalet",
+      "plural": "Chalets"
+    },
+    {
+      "slug": "casa",
+      "name": "Casa",
+      "plural": "Casas"
+    },
+    {
+      "slug": "villa",
+      "name": "Villa",
+      "plural": "Villas"
+    },
+    {
+      "slug": "adosado",
+      "name": "Adosado",
+      "plural": "Adosados"
+    },
+    {
+      "slug": "local",
+      "name": "Local",
+      "plural": "Locales"
+    },
+    {
+      "slug": "oficina",
+      "name": "Oficina",
+      "plural": "Oficinas"
+    },
+    {
+      "slug": "terreno",
+      "name": "Terreno",
+      "plural": "Terrenos"
+    },
+    {
+      "slug": "garaje",
+      "name": "Garaje",
+      "plural": "Garajes"
+    },
+    {
+      "slug": "edificio",
+      "name": "Edificio",
+      "plural": "Edificios"
+    },
+    {
+      "slug": "otros",
+      "name": "Otros",
+      "plural": "Otros inmuebles"
+    }
+  ],
+  "features": [
+    {
+      "slug": "terraza",
+      "name": "Terraza"
+    },
+    {
+      "slug": "piscina",
+      "name": "Piscina"
+    },
+    {
+      "slug": "garaje",
+      "name": "Garaje"
+    },
+    {
+      "slug": "ascensor",
+      "name": "Ascensor"
+    },
+    {
+      "slug": "exterior",
+      "name": "Exterior"
+    },
+    {
+      "slug": "vistas",
+      "name": "Vistas"
+    },
+    {
+      "slug": "obra-nueva",
+      "name": "Obra nueva"
+    },
+    {
+      "slug": "reformado",
+      "name": "Reformado"
+    },
+    {
+      "slug": "jardin",
+      "name": "Jardín"
+    },
+    {
+      "slug": "aire-acondicionado",
+      "name": "Climatización"
+    }
+  ]
+}
