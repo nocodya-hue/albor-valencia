@@ -5,8 +5,11 @@
   <section class="hero" data-hero aria-label="Presentación">
     <div class="hero__pin">
       <div class="hero__stage">
-        <!-- Vídeo de campaña en bucle continuo (16:9). Producción: versión comprimida ≤ 8 MB en H.264 + WebM. -->
-        <video class="hero__video" src="assets/video/albor-hero.mp4" poster="assets/img/hero-video-poster.webp" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
+        <!-- Vídeo de campaña en bucle (H.264, sin audio, faststart): 1080p 5 MB para escritorio, 720p 2,3 MB para móvil. Original 2560×1440 fuera del proyecto. -->
+        <video class="hero__video" poster="assets/img/hero-video-poster.webp" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true">
+          <source src="assets/video/albor-hero-1080.mp4" type="video/mp4" media="(min-width: 901px)">
+          <source src="assets/video/albor-hero-720.mp4" type="video/mp4">
+        </video>
         <div class="hero__shade" aria-hidden="true"></div>
       </div>
 

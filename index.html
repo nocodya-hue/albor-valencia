@@ -18,8 +18,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Newsreader:ital,opsz,wght@0,6..72,200..500;1,6..72,200..400&display=swap">
-<link rel="stylesheet" href="assets/css/albor.css?v=muq9e05h">
-<link rel="stylesheet" href="assets/css/pages.css?v=muq9e05h">
+<link rel="stylesheet" href="assets/css/albor.css?v=muqa0a4t">
+<link rel="stylesheet" href="assets/css/pages.css?v=muqa0a4t">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent","name":"Albor · Propiedades en Valencia","foundingDate":"2006","address":{"@type":"PostalAddress","streetAddress":"Calle Colón 3","addressLocality":"Valencia","postalCode":"46004","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":39.4693,"longitude":-0.3737},"areaServed":["Valencia","Godella","Rocafort","Bétera","La Eliana","Alboraya"],"url":"https://nocodya-hue.github.io/albor-valencia/"}
@@ -83,8 +83,11 @@
   <section class="hero" data-hero aria-label="Presentación">
     <div class="hero__pin">
       <div class="hero__stage">
-        <!-- Vídeo de campaña en bucle continuo (16:9). Producción: versión comprimida ≤ 8 MB en H.264 + WebM. -->
-        <video class="hero__video" src="assets/video/albor-hero.mp4" poster="assets/img/hero-video-poster.webp" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
+        <!-- Vídeo de campaña en bucle (H.264, sin audio, faststart): 1080p 5 MB para escritorio, 720p 2,3 MB para móvil. Original 2560×1440 fuera del proyecto. -->
+        <video class="hero__video" poster="assets/img/hero-video-poster.webp" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true">
+          <source src="assets/video/albor-hero-1080.mp4" type="video/mp4" media="(min-width: 901px)">
+          <source src="assets/video/albor-hero-720.mp4" type="video/mp4">
+        </video>
         <div class="hero__shade" aria-hidden="true"></div>
       </div>
 
@@ -412,9 +415,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-<script src="assets/js/albor.js?v=muq9e05h" defer></script>
+<script src="assets/js/albor.js?v=muqa0a4t" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
-<script src="assets/js/zonemap.js?v=muq9e05h" defer></script>
-<script src="assets/js/home.js?v=muq9e05h" defer></script>
+<script src="assets/js/zonemap.js?v=muqa0a4t" defer></script>
+<script src="assets/js/home.js?v=muqa0a4t" defer></script>
 </body>
 </html>

@@ -58,7 +58,7 @@ Siempre calculadas desde el inventario publicado; caché de 10 min invalidada en
 ## Rendimiento (objetivos y cómo se cumplen)
 - Sin framework: JS propio ~100 KB sin minificar (≈35 KB minificado + gzip estimado); GSAP+ScrollTrigger y Lenis solo por CDN; Leaflet solo en páginas con mapa.
 - Imágenes WebP con `loading="lazy"` y `decoding="async"`; en WP, `srcset` automático y AVIF si el servidor lo soporta.
-- Hero: vídeo de campaña en bucle (`assets/video/albor-hero.mp4`, 2560×1440, 11,7 s, 33 MB) con póster. **Pendiente para producción:** comprimir a 1920×1080, ≤ 8 MB, H.264 + WebM, y servir una versión vertical 9:16 más ligera en móvil.
+- Hero: vídeo de campaña en bucle, H.264 sin audio con faststart: `albor-hero-1080.mp4` (5,0 MB, escritorio) y `albor-hero-720.mp4` (2,3 MB, móvil) elegidos con `<source media>`; póster mientras carga. Original 2560×1440 (33 MB) fuera del proyecto.
 - Lenis y cursor solo con puntero fino; parallax a mitad de velocidad en móvil; scroll horizontal fijado solo en desktop (en móvil, scroll-snap nativo).
 - `prefers-reduced-motion`: sin parallax, sin WebGL, sin pin, reveals instantáneos.
 - Producción: minificar/concatenar (`esbuild`), `font-display: swap`, preconnect a fuentes, caché de página (excepto `/wp-json`).
